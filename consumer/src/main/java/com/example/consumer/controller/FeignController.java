@@ -1,6 +1,6 @@
 package com.example.consumer.controller;
 
-import com.example.consumer.feignClient.EurakeClientFeignService;
+import com.example.api.domain.EurakeClientFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -29,6 +29,6 @@ public class FeignController {
     public String feign(@RequestParam("name") String name) {
         ServiceInstance serviceInstance = loadBalancerClient.choose("producer");
         System.out.println(serviceInstance.getHost() + ":" + serviceInstance.getPort());
-        return eurakeClientFeignService.producerGet(name);
+        return eurakeClientFeignService.getMessage(name);
     }
 }
