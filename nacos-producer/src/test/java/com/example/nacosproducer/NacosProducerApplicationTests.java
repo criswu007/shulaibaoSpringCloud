@@ -1,10 +1,10 @@
-package com.example.api;
+package com.example.nacosproducer;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiApplicationTests {
+class NacosProducerApplicationTests {
 
     @Test
     void contextLoads() {

@@ -5,6 +5,7 @@
     <groupId>com.example</groupId>
     <artifactId>register-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>register-server</name>
     <description>Demo project for Spring Boot</description>
 

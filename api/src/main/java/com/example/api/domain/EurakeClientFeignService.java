@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * spring.application.name=producer 的服务接口列表
  */
-@FeignClient(value = "producer", configuration = FeignConfig.class)
+@FeignClient(value = "producer")
 @RestController
 public interface EurakeClientFeignService {
     @GetMapping("/get")

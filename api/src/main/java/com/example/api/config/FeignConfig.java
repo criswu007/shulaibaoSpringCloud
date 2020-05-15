@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  * ------------------------------------------------------------------
  * 2020-4-9 21:28  use      1.0        1.0 Version
  */
-@Configuration
+//@Configuration
 public class FeignConfig {
 
     /**
